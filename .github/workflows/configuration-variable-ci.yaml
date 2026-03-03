@@ -12,7 +12,7 @@ jobs:
       GAME_VERSION: "run"
     runs-on: ubuntu-latest
     steps:
-      - name: DOWNLOAD TPHE BINARY
+      - name: DOWNLOAD THE BINARY
         run: echo "${{vars.GAME}}:$GAME_VERSION download has been $STATUS"
         env:
           STATUS: "STARTED"
