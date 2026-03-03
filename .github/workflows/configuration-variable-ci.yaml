@@ -1,4 +1,4 @@
-name: Variable Workflow - 2
+name: Testing Configuration Variable
 on:
   workflow_dispatch:
 jobs:
