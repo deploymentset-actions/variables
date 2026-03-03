@@ -15,6 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ADDING THE NUMBERS
-        run: echo "The sum of the numbers is $SUM"
-        env:
-          SUM: "{{ inputs.Number-1 }} + {{ inputs.Number-2 }}"
+        run: |
+          sum=$(( ${{ inputs.Number-1 }} + ${{ inputs.Number-2 }} ))
+          echo "The sum of the numbers is $sum"
