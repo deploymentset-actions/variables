@@ -1,10 +1,10 @@
 name: Variable Workflow - 1
-on:
-  push:
-    branches:
-      - main
-      - feature
-  workflow_dispatch:
+# on:
+#   push:
+#     branches:
+#       - main
+#       - feature
+#   workflow_dispatch:
 env:
   GAME: CALL OF DUTY
 jobs:
