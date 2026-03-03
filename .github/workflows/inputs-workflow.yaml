@@ -1,15 +1,15 @@
 name: Testing Single Workflow Variable
 on:
   workflow_dispatch:
-  inputs:
-    Number-1:
-      description: "Enter the first number"
-      required: true
-      default: "1000"
-    Number-2:
-      description: "Enter the second number"
-      required: true
-      default: "500"
+    inputs:
+      Number-1:
+        description: "Enter the first number"
+        required: true
+        default: "1000"
+      Number-2:
+        description: "Enter the second number"
+        required: true
+        default: "500"
 jobs:
   ADD_THE_NUMBERS:
     runs-on: ubuntu-latest
