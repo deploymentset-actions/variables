@@ -1,5 +1,6 @@
 name: Variable Workflow - 3
 on:
+  workflow_dispatch:
 jobs:
   COPY_THE_BINARY:
     env:
