@@ -8,7 +8,7 @@ on:
 env:
   GAME: CALL OF DUTY
 jobs:
-  COPY THE BINARY:
+  COPY_THE_BINARY:
     env:
       GAME_VERSION: "MODERN WARFARE 2"
     runs-on: ubuntu-latest
