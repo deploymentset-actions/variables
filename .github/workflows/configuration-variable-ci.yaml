@@ -1,0 +1,18 @@
+name: Variable Workflow - 2
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+env:
+  GAME: CALL OF DUTY
+jobs:
+  COPY_THE_BINARY:
+    env:
+      GAME_VERSION: "run"
+    runs-on: ubuntu-latest
+    steps:
+      - name: DOWNLOAD TPHE BINARY
+        run: echo "${{var.GAME}}:$GAME_VERSION download has been $STATUS"
+        env:
+          STATUS: "STARTED"
