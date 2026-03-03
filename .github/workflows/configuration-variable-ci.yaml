@@ -1,6 +1,8 @@
 name: Testing Configuration Variable
 on:
   workflow_dispatch:
+env:
+  ACTIONS_STEP_DEBUG: "true"
 jobs:
   COPY_THE_BINARY:
     env:
@@ -11,3 +13,4 @@ jobs:
         run: echo "${{vars.GAME}}:$GAME_VERSION download has been $STATUS"
         env:
           STATUS: "STARTED"
+
