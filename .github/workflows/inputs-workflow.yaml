@@ -18,3 +18,4 @@ jobs:
         run: |
           sum=$(( ${{ inputs.Number-1 }} + ${{ inputs.Number-2 }} ))
           echo "The sum of the numbers is $sum"
+          
