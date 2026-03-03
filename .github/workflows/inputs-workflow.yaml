@@ -1,4 +1,4 @@
-name: Testing Single Workflow Variable
+name: Testing Inputs Workflow
 on:
   workflow_dispatch:
     inputs:
