@@ -16,4 +16,4 @@ jobs:
       - name: DOWNLOAD TPHE BINARY
         run: echo "$GAME:$GAME_VERSION download has been $STATUS"
         env:
-          STATUS: "IN PROGRESS"
+          STATUS: "STARTED"
