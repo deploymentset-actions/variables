@@ -1,0 +1,29 @@
+name: Variable Workflow - 3
+on:
+jobs:
+  COPY_THE_BINARY:
+    env:
+      GAME_VERSION: "run"
+    runs-on: ubuntu-latest
+    steps:
+      - name: DOWNLOAD THE BINARY
+        run: echo "${{vars.GAME}}:$GAME_VERSION download has been $STATUS"
+        env:
+          STATUS: "STARTED"
+      - name: Testing Context Variable
+        run: |
+          echo "The game is ${{ github.event.inputs.game }}"
+          echo "Name of the workflow is ${{ github.workflow }}"
+          echo "Name of the repository is ${{ github.repository }}"
+          echo "Name of the owner is ${{ github.repository_owner }}"
+          echo "Name of the branch is ${{ github.ref }}"
+          echo "Name of the commit is ${{ github.sha }}"
+          echo "Name of the commit message is ${{ github.event.head_commit.message }}"
+          echo "Name of the commit author is ${{ github.event.head_commit.author.name }}"
+          echo "Name of the commit author email is ${{ github.event.head_commit.author.email }}"
+          echo "Name of the commit author username is ${{ github.event.head_commit.author.username }}"
+          echo "Name of the commit author avatar is ${{ github.event.head_commit.author.avatar_url }}"
+          echo "Name of the commit author url is ${{ github.event.head_commit.author.url }}"
+          echo "Name of the commit author date is ${{ github.event.head_commit.author.date }}"
+          echo "Name of the commit author time is ${{ github.event.head_commit.author.time }}"
+          echo "Name of the commit author timezone is ${{ github.event.head_commit.author.timezone }}"

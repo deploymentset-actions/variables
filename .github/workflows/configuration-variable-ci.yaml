@@ -1,11 +1,6 @@
 name: Variable Workflow - 2
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
-env:
-  GAME: CALL OF DUTY
 jobs:
   COPY_THE_BINARY:
     env:
